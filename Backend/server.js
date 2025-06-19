@@ -26,6 +26,9 @@ import { userRouter } from './routes/userRoutes.js'
 server.use(`${api}/register`,userRouter)
 server.use(`${api}/login`, userRouter)
 
+import { bookingRouter } from './routes/bookingRoutes.js'
+server.use(`${api}/createBooking`, bookingRouter)
+
 
 
 

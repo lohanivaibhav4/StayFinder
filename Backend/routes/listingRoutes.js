@@ -29,11 +29,12 @@ router.get('/:id', async (req,res)=>{
 //! ADD NEW LISTING
 router.post('/', async (req, res)=>{
     try{
-        const { hostId, propertyName, propertyDescription, imageUrl, price } = req.body
+        const { hostId, propertyName, propertyDescription, propertyLocation, imageUrl, price } = req.body
         const newListing = new Listing({
             hostId,
             propertyName, 
-            propertyDescription, 
+            propertyDescription,
+            propertyLocation, 
             imageUrl, 
             price
         })

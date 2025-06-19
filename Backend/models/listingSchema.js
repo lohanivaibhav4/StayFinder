@@ -12,6 +12,11 @@ const ListingSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    propertyLocation:{
+        type: String,
+        required: true,
+        trim: true
+    },
     propertyDescription:{
         type: String,
         required:true,
